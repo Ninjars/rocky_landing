@@ -8,5 +8,12 @@
 
 	<body>
 		<script type="text/javascript" src = "plotDemo.js"></script>
+		<script type="text/javascript">
+			window.onload = function() {
+				var game = new Phaser.Game(640, 480, Phaser.AUTO, 'game');
+				game.state.add('Game', PhaserGame, true);
+				game.state.start('Game');
+			}
+		</script>
 	</body>
 </html>
